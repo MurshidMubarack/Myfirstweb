@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .container{
+        text-align: center;
+      }
+      .telegram{
+          text-align: center;
+      }
+    </style>
+    <title>My first website</title>
+    <link rel="icon" type="image/x-icon" href="buildlogo.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd; position: fixed; width: 100%; z-index: 1;">
+      <a class="navbar-brand" href="#">
+      <img src="buildlogo.png" width="100" height="50" alt="">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#register-section">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mentor-section">Mentors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#participate-section">Participate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top: 4.8em;">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="carousel 3.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="carousel 2.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="carousel 3.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="telegram" id="participate-section">
+    <h3 style="padding: 20px;">Join us</h3>
+    <p style="padding: 10px;">Pygrammers is a community of python enthusiasses with similer ideologies and intrests </p>
+    <a href="https://t.me/pygrammers_official"><button type="submit" class="btn btn-primary">Telegram</button></a>
+  </div>
+  <div class="container h-100" id="register-section" style="padding: 20px;">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+          <form class="p-3" style="border: 1px solid; border-color: #cff2f5;">
+            <h3 style="text-align: center;">Form:</h3>
+            <div class="form-group">
+              <label for="exampleInputname1">Name</label>
+              <input type="email" class="form-control" id="exampleInputname1" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputmnumber1">Mobile number</label>
+              <input type="password" class="form-control" id="exampleInputmnumber1" placeholder="Mobile number">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputcompany1">Company/Institution name</label>
+              <input type="password" class="form-control" id="exampleInputcompany1" placeholder="company/Institution name">
+            </div>
+            <div class="form-group" style="padding: 5px 20px;">
+              <label for="exampleFormControlFile1" style="text-align: start;"><small class="form-text text-muted">a short video or image of hand written sheet showing your interest to join build.myweb</small></label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Have you attented any events by pygrammers before?!</option>
+              <option value="yes">YES</option>
+              <option value="no">NO</option>
+            </select>
+            <button type="submit" class="btn btn-muted btn-customized">Submit form</button>
+          </form>
+        </div>
+    </div>
+  </div>
+  <div>
+  <div class="container-fluid bg-light" id="mentor-section">
+    <h4 style="text-align: center;">Mentor</h4>
+    <div class="row">
+  <div class="card col-12 col-sm-6 col-md-4 col-xl-4 bg-light p-5 mb-0 border-0" style="width: 18rem;">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/220px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">The first website was created by British computer scientist Tim Berners-Lee. On it, people could find out how to create web pages and learn about hypertext (coded words or phrases that link to content).</p>
+    </div>
+  </div>
+  <div class="card col-12 col-sm-6 col-md-4 col-xl-4 p-5 bg-light mb-0 border-0" style="width: 18rem;">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/220px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">The first website was created by British computer scientist Tim Berners-Lee. On it, people could find out how to create web pages and learn about hypertext (coded words or phrases that link to content).</p>
+    </div>
+</div>
+  <div class="card col-12 col-sm-6 col-md-4 col-xl-4 p-5 bg-light mb-0 border-0" style="width: 18rem;">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/220px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">The first website was created by British computer scientist Tim Berners-Lee. On it, people could find out how to create web pages and learn about hypertext (coded words or phrases that link to content).</p>
+    </div>
+  </div>
+  <div class="card col-12 col-sm-6 col-md-4 col-xl-4 bg-light p-5 mb-0 border-0" style="width: 18rem;">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/220px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">The first website was created by British computer scientist Tim Berners-Lee. On it, people could find out how to create web pages and learn about hypertext (coded words or phrases that link to content).</p>
+    </div>
+  </div>
+  <div class="card col-12 col-sm-6 col-md-4 col-xl-4 bg-light p-5 mb-0 border-0" style="width: 18rem;">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/220px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">The first website was created by British computer scientist Tim Berners-Lee. On it, people could find out how to create web pages and learn about hypertext (coded words or phrases that link to content).</p>
+    </div>
+  </div>
+  <div class="card col-12 col-sm-6 col-md-4 col-xl-4 bg-light p-5 mb-0 border-0" style="width: 18rembg-light">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/220px-Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">The first website was created by British computer scientist Tim Berners-Lee. On it, people could find out how to create web pages and learn about hypertext (coded words or phrases that link to content).</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div>  
+<footer style="background-color: #e3f2fd; height: 45px; width: 100%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 align-items-center p-1">
+        <img src="footer.png" alt="" style="width: 200px;">
+      </div>
+    </div>
+  </div>  
+</footer>
+</div>  
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html> 
